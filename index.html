@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8" />
+    <title>Сайт портфолио</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body >
+    <div class="container">
+<div class="info">  
+    <img src="photo_5327926292856819498_y.jpg" width="200" alt="тут аватарка" class="avatar">      
+    
+        <div class="info1"><h1>Тюрина Александра</h1>
+    <p> я студент <strong>МТУСИ</strong> </p>
+    <p>Мне 19 лет</p>
+        </div>
+
+   <div class="card bg-green">
+        <h4>Мой телеграмм  и githab</h4>  
+                @sakura_kun
+            |
+               <a href="https://github.com/Rakshasa2">github </a>
+        </div>     
+
+    </div>
+    <div class="card bg-red">    
+    <button class="toggle-button" onclick="togglePortfolio()">Portfolio</button>
+            <div class="portfolio-menu" id="portfolioMenu">
+                <p>Check out my work:</p>
+                <ul>
+                    <a href="https://github.com/Rakshasa2/saku/blob/main/labb2.py">
+                Лабараторая номер2
+                    </a>
+                </ul>
+            </div>
+        </div>
+    <script>
+        function togglePortfolio() {
+            var portfolioMenu = document.getElementById("portfolioMenu");
+            if (portfolioMenu.style.display === "none") {
+                portfolioMenu.style.display = "block";
+            } else {
+                portfolioMenu.style.display = "none";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
